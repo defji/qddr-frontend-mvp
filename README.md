@@ -1,4 +1,4 @@
-# GDDR frontend MVP
+# QDDR frontend MVP
 
 ## Project setup
 ```

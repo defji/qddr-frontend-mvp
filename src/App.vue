@@ -5,18 +5,22 @@
                 color="primary"
                 dark
         >
-            <div class="d-flex align-center">
-                Aroma frontend
+            <div class="d-flex align-center" to="/">
+                QDDR
             </div>
 
             <v-spacer></v-spacer>
 
             <span v-if="isLogged">
-                <v-btn text to="/add_order">Rendelés feladása</v-btn>
-                <v-btn text to="/partners">Partnerek</v-btn>
+                <v-btn text to="/add_symptom">Tünetek rögzítése</v-btn>
+                <v-btn text to="/start_test">Teszt indítása</v-btn>
+                <v-btn icon @click="logout">
+                    <v-icon>logout</v-icon>
+                </v-btn>
+
             </span>
             <span v-else>
-                <v-btn text>Regisztráció</v-btn>
+                <v-btn to="/registration" text>Regisztráció</v-btn>
             </span>
         </v-app-bar>
 

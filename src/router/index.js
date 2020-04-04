@@ -14,26 +14,31 @@ const routes = [
     },
   },
   {
-    path: '/partners',
-    name: 'Partnerek',
+    path: '/start_test',
+    name: 'Test',
+    component: () => import(/* webpackChunkName: "login" */ '../components/StartTest.vue'),
     meta: {
       auth: true
     },
-    component: () => import(/* webpackChunkName: "partners" */ '../components/partners/index')
   },
   {
-    path: '/add_order',
-    name: 'Rendelés feladása',
+    path: '/add_symptom',
+    name: 'AddSymptom',
+    component: () => import(/* webpackChunkName: "login" */ '../components/AddSymptom.vue'),
     meta: {
       auth: true
     },
-    component: () => import(/* webpackChunkName: "add_order" */ '../components/orders/index')
   },
   {
     path: '/login',
     name: 'Login',
     component: () => import(/* webpackChunkName: "login" */ '../components/Login.vue')
-  }
+  },
+  {
+    path: '/registration',
+    name: 'Register',
+    component: () => import(/* webpackChunkName: "login" */ '../components/Register.vue')
+  },
 ]
 
 const router = new VueRouter({

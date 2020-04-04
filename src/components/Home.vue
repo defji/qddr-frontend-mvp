@@ -1,8 +1,6 @@
 <template>
-    <div class="home">
-
-        <v-btn v-if="isLogged" @click="logout">logout</v-btn>
-        <v-btn @click="getUser">getUser</v-btn>
+    <div>
+        szia
     </div>
 </template>
 

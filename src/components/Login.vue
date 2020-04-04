@@ -17,8 +17,6 @@
                                                       prepend-icon="person_outline"
                                                       type="text" name="email"
                                                       v-model="email"
-                                                      :error-messages="errors.collect('email')"
-                                                      v-validate="'required|email'"
                                         ></v-text-field>
                                     </v-flex>
                                 </v-layout>
@@ -27,15 +25,12 @@
                                         <v-text-field label="Jelszó"
                                                       prepend-icon="lock_outline"
                                                       type="password"
-                                                      :error-messages="errors.collect('password')"
-                                                      v-validate="'required|min:6'"
-                                                      data-vv-name="password"
                                                       name="password" v-model="password"></v-text-field>
                                     </v-flex>
                                 </v-layout>
                                 <v-card-actions>
                                     <v-spacer></v-spacer>
-                                    <v-btn rounded color="primary" type="submit">Bejelentkezés</v-btn>
+                                    <v-btn color="primary" type="submit">Bejelentkezés</v-btn>
                                 </v-card-actions>
                             </form>
                         </v-container>
@@ -63,23 +58,22 @@
     }),
     methods: {
       login () {
-        this.$validator.validateAll().then((result) => {
-          if (result) {
-            this.$store
-              .dispatch('login', {
-                email: this.email,
-                password: this.password
-              })
-              .then(() => {
-                this.$router.push({ name: 'About' })
-              })
-              .catch(error => {
-                this.$setLaravelValidationErrorsFromResponse(error.response.data)
-              })
-          }
-        }).catch(err => {
-          console.log(err)
+        // this.$validator.validateAll().then((result) => {
+        //   if (result) {
+        this.$store.dispatch('login', {
+          email: 'dfj@dfj.hu',
+          password: 'qddrrulez'
         })
+          .then(() => {
+            this.$router.push({ name: 'Home' })
+          })
+          .catch(error => {
+            //this.$setLaravelValidationErrorsFromResponse(error.response.data)
+          })
+        //   }
+        // }).catch(err => {
+        //   console.log(err)
+        // })
 
       }
     }

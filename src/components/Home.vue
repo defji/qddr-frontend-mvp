@@ -1,14 +1,17 @@
 <template>
     <v-container>
         <v-col>
+
+            <h1>Korábbi tesztjeim</h1>
             <v-data-table
                     :headers="headers"
                     :items="items"
                     :items-per-page="50"
                     class="elevation-1"
+                    disable-sort
             >
                 <template v-slot:item.actions="{ item }">
-                    <v-row>
+                    <v-row class="mb-2">
                         <v-spacer></v-spacer>
                         <v-btn rounded color="accent">Részletek</v-btn>
                     </v-row>

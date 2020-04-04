@@ -5,8 +5,12 @@
                 color="primary"
                 dark
         >
-            <div class="d-flex align-center" to="/">
-                QDDR
+
+            <div class="d-flex align-center">
+
+                <strong class="mr-1">QDDR</strong>
+                <span class="hidden-sm-and-down">| Quick Digital Diagnostic Response</span>
+
             </div>
 
             <v-spacer></v-spacer>
@@ -27,6 +31,13 @@
         <v-content>
             <router-view></router-view>
         </v-content>
+        <v-footer>
+            HackTheCrisis 2020 entry by InnoTechSol
+            <v-spacer>
+
+            </v-spacer>
+            &copy 2020
+        </v-footer>
     </v-app>
 </template>
 

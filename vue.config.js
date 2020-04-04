@@ -1,8 +1,11 @@
 module.exports = {
+  baseUrl: './'
+}
+module.exports = {
   chainWebpack: config => {
-    config.module.rules.delete('eslint');
+    config.module.rules.delete('eslint')
   },
-  "transpileDependencies": [
-    "vuetify"
+  'transpileDependencies': [
+    'vuetify'
   ]
 }

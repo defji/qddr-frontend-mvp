@@ -1,0 +1,87 @@
+<template>
+
+    <v-container bg fill-height grid-list-md text-xs-center justify-center>
+        <v-row justify="center" align="center">
+            <v-col cols="12" sm="4">
+
+                <v-card xs12 md12 fill-height style="width: 500px">
+                    <v-card-title>
+                        Bejelentkezés
+                    </v-card-title>
+                    <v-card-text>
+                        <v-container fluid>
+                            <form @submit.prevent="login">
+                                <v-layout row>
+                                    <v-flex xs12>
+                                        <v-text-field label="E-mail cím"
+                                                      prepend-icon="person_outline"
+                                                      type="text" name="email"
+                                                      v-model="email"
+                                                      :error-messages="errors.collect('email')"
+                                                      v-validate="'required|email'"
+                                        ></v-text-field>
+                                    </v-flex>
+                                </v-layout>
+                                <v-layout row>
+                                    <v-flex xs12>
+                                        <v-text-field label="Jelszó"
+                                                      prepend-icon="lock_outline"
+                                                      type="password"
+                                                      :error-messages="errors.collect('password')"
+                                                      v-validate="'required|min:6'"
+                                                      data-vv-name="password"
+                                                      name="password" v-model="password"></v-text-field>
+                                    </v-flex>
+                                </v-layout>
+                                <v-card-actions>
+                                    <v-spacer></v-spacer>
+                                    <v-btn rounded color="primary" type="submit">Bejelentkezés</v-btn>
+                                </v-card-actions>
+                            </form>
+                        </v-container>
+                    </v-card-text>
+                </v-card>
+            </v-col>
+        </v-row>
+    </v-container>
+</template>
+<style scoped>
+    .v-content {
+        background: bisque;
+    }
+</style>
+<script>
+  export default {
+    $_veeValidate: {
+      validator: 'new'
+    },
+
+    components: {},
+    data: () => ({
+      email: '',
+      password: ''
+    }),
+    methods: {
+      login () {
+        this.$validator.validateAll().then((result) => {
+          if (result) {
+            this.$store
+              .dispatch('login', {
+                email: this.email,
+                password: this.password
+              })
+              .then(() => {
+                this.$router.push({ name: 'About' })
+              })
+              .catch(error => {
+                this.$setLaravelValidationErrorsFromResponse(error.response.data)
+              })
+          }
+        }).catch(err => {
+          console.log(err)
+        })
+
+      }
+    }
+  }
+</script>

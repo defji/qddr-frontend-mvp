@@ -1,5 +1,5 @@
 <template>
-    <v-app>
+    <v-app class="bg">
 
 
         <v-navigation-drawer
@@ -77,7 +77,10 @@
         </v-content>
     </v-app>
 </template>
-
+<style scoped>
+    .bg {
+    }
+</style>
 <script>
   // import HelloWorld from './components/HelloWorld'
   import { mapGetters } from 'vuex'

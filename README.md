@@ -1,8 +1,9 @@
 # QDDR frontend MVP
 
-
-[Live demo](http://qddr.dfj.hu) 
-[Video](https://drive.google.com/file/d/1pDlbXau-HQoi5rwwiVjhq7nHeOXcxo9I/view?usp=sharing)
+HackTheCrisis 2020 entry project. SaveLives category.  
+- [Description](QDDR_Projekt_leiras.pdf) 
+- [Video](https://drive.google.com/file/d/1pDlbXau-HQoi5rwwiVjhq7nHeOXcxo9I/view?usp=sharing)
+- [Live demo](http://qddr.dfj.hu) 
 
 ## Project setup
 ```

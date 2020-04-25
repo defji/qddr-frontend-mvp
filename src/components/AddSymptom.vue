@@ -5,19 +5,19 @@
 
                 <v-card xs12 md12 fill-height style="width: 500px">
                     <v-card-title>
-                        Tünetek rögzítése
+                        Tünetek hozzáadása
                     </v-card-title>
                     <v-card-text>
                         <v-container fluid>
                             <form @submit.prevent="addSymptom">
                                 <v-layout row>
                                     <v-flex xs12>
-                                        <v-checkbox label="Szaglás romlás"></v-checkbox>
+                                        <v-checkbox label="Loss of smell"></v-checkbox>
                                     </v-flex>
                                 </v-layout>
                                 <v-layout row>
                                     <v-flex xs12>
-                                        <v-checkbox label="Ízlelés romlás"></v-checkbox>
+                                        <v-checkbox label="Loss of taste"></v-checkbox>
                                     </v-flex>
                                 </v-layout>
                                 <v-layout row>
@@ -27,7 +27,7 @@
                                 </v-layout>
                                 <v-layout row>
                                     <v-flex xs8>
-                                        <v-checkbox label="Láz"></v-checkbox>
+                                        <v-checkbox label="Fever"></v-checkbox>
                                     </v-flex>
                                     <v-flex xs4>
                                         <v-text-field outlined

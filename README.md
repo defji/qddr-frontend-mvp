@@ -3,7 +3,6 @@
 ## EUvsVirus 2020 | Health & Life | Cheap rapid tests  
 
 - [Description](https://devpost.com/software/quick-digital-diagnostic-response-qddr)
-- [Video](https://drive.google.com/file/d/1pDlbXau-HQoi5rwwiVjhq7nHeOXcxo9I/view?usp=sharing)
 - [Live demo](http://qddr.dfj.hu) 
 
 ## Project setup

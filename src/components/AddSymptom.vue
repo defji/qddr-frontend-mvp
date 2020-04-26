@@ -5,7 +5,7 @@
 
                 <v-card xs12 md12 fill-height style="width: 500px">
                     <v-card-title>
-                        Tünetek hozzáadása
+                        Add symptoms
                     </v-card-title>
                     <v-card-text>
                         <v-container fluid>
@@ -22,7 +22,7 @@
                                 </v-layout>
                                 <v-layout row>
                                     <v-flex xs12>
-                                        <v-checkbox label="Száraz köhögés"></v-checkbox>
+                                        <v-checkbox label="Dry cough"></v-checkbox>
                                     </v-flex>
                                 </v-layout>
                                 <v-layout row>
@@ -34,22 +34,22 @@
                                                       suffix="°C"
                                                       mask="###"
                                                       placeholder="38.5"
-                                                      label="Mértéke"></v-text-field>
+                                                      label="Value"></v-text-field>
                                     </v-flex>
                                 </v-layout>
                                 <v-layout row>
                                     <v-flex xs12>
-                                        <v-checkbox label="Végtag fájdalom"></v-checkbox>
+                                        <v-checkbox label="Pain in extremity"></v-checkbox>
                                     </v-flex>
                                 </v-layout>
                                 <v-layout row>
                                     <v-flex xs12>
-                                        <v-checkbox label="Fáradtság, levertség"></v-checkbox>
+                                        <v-checkbox label="Fatigue, depression"></v-checkbox>
                                     </v-flex>
                                 </v-layout>
                                 <v-layout row>
                                     <v-flex xs12>
-                                        <v-checkbox label="Nehézlégzés"></v-checkbox>
+                                        <v-checkbox label="Breathing difficulties"></v-checkbox>
                                     </v-flex>
                                 </v-layout>
                             </form>
@@ -58,7 +58,7 @@
                     <v-card-actions>
                         <v-spacer></v-spacer>
                         <v-btn color="primary">
-                            Tünetek rögzítése
+                            Add symptomps
                         </v-btn>
                     </v-card-actions>
                 </v-card>

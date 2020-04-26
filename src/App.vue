@@ -18,21 +18,21 @@
                         <v-list-item-action>
                             <v-icon>home</v-icon>
                         </v-list-item-action>
-                        <v-list-item-title>Kezdőoldal</v-list-item-title>
+                        <v-list-item-title>Home</v-list-item-title>
                     </v-list-item>
 
                     <v-list-item to="/add_symptom">
                         <v-list-item-action>
                             <v-icon>ballot</v-icon>
                         </v-list-item-action>
-                        <v-list-item-title>Tünetek hozzáadása</v-list-item-title>
+                        <v-list-item-title>Add Symptoms</v-list-item-title>
                     </v-list-item>
 
                     <v-list-item to="/start_test">
                         <v-list-item-action>
                             <v-icon>camera_alt</v-icon>
                         </v-list-item-action>
-                        <v-list-item-title>Új teszt</v-list-item-title>
+                        <v-list-item-title>Add test</v-list-item-title>
                     </v-list-item>
                 </v-list-item-group>
             </v-list>
@@ -45,7 +45,7 @@
             <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
             <v-toolbar-title class="d-flex align-center">
 
-                <strong class="mr-1">QDDR</strong>
+                <img src="logo.png" alt="" height="58">
                 <span class="hidden-sm-and-down">| Quick Digital Diagnostic Response</span>
             </v-toolbar-title>
 
@@ -60,14 +60,14 @@
 
             </span>
             <span v-else>
-                <v-btn to="/registration" text>Regisztráció</v-btn>
+                <v-btn to="/registration" text>Registration</v-btn>
             </span>
         </v-app-bar>
 
         <v-content>
             <router-view></router-view>
             <v-footer absolute fixed>
-                HackTheCrisis 2020 entry by InnoTechSol
+                EUvsVirus 2020 entry by InnoTechSol
                 <v-spacer>
 
                 </v-spacer>

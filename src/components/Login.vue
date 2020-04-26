@@ -4,16 +4,17 @@
         <v-row justify="center" align="center">
             <v-col cols="12" sm="4">
 
+
                 <v-card xs12 md12 fill-height style="width: 500px">
                     <v-card-title>
-                        Bejelentkezés
+                        Login
                     </v-card-title>
                     <v-card-text>
                         <v-container fluid>
                             <form @submit.prevent="login">
                                 <v-layout row>
                                     <v-flex xs12>
-                                        <v-text-field label="E-mail cím"
+                                        <v-text-field label="E-mail"
                                                       prepend-icon="person_outline"
                                                       type="text" name="email"
                                                       v-model="email"
@@ -22,7 +23,7 @@
                                 </v-layout>
                                 <v-layout row>
                                     <v-flex xs12>
-                                        <v-text-field label="Jelszó"
+                                        <v-text-field label="Password"
                                                       prepend-icon="lock_outline"
                                                       type="password"
                                                       name="password" v-model="password"></v-text-field>
@@ -30,7 +31,7 @@
                                 </v-layout>
                                 <v-card-actions>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="primary" type="submit">Bejelentkezés</v-btn>
+                                    <v-btn color="primary" type="submit">Login</v-btn>
                                 </v-card-actions>
                             </form>
                         </v-container>

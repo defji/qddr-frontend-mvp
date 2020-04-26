@@ -9,5 +9,14 @@ export default new Vuetify({
   lang: {
     locales: { hu },
     current: 'hu'
+  },
+  theme: {
+    themes: {
+      light: {
+        primary: '#1a7868',
+        // secondary: colors.red.lighten4, // #FFCDD2
+        accent: '#FFEB3B',
+      },
+    },
   }
 })

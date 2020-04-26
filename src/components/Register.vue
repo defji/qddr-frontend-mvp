@@ -6,7 +6,7 @@
 
                 <v-card xs12 md12 fill-height style="width: 500px">
                     <v-card-title>
-                        Regisztráció
+                        Registration
                     </v-card-title>
                     <v-card-text>
                         <v-container fluid>
@@ -22,7 +22,7 @@
                                 </v-layout>
                                 <v-layout row>
                                     <v-flex xs12>
-                                        <v-text-field label="Jelszó"
+                                        <v-text-field label="Password"
                                                       prepend-icon="lock_outline"
                                                       type="password"
                                                       name="password"
@@ -31,7 +31,7 @@
                                 </v-layout>
                                 <v-layout row>
                                     <v-flex xs12>
-                                        <v-text-field label="Jelszó megerősítése"
+                                        <v-text-field label="Password confirmation"
                                                       prepend-icon="lock_outline"
                                                       type="password"
                                                       name="password_conf"
@@ -51,7 +51,7 @@
                                             <template v-slot:activator="{ on }">
                                                 <v-text-field
                                                         v-model="person.birthdate"
-                                                        label="Születésnap"
+                                                        label="Date of birth"
                                                         prepend-icon="event"
                                                         readonly
                                                         v-on="on"
@@ -70,7 +70,7 @@
                                 </v-layout>
                                 <v-layout>
                                     <v-container fluid>
-                                        <v-checkbox label="Az adatkezeléss elfogadom"
+                                        <v-checkbox label="I have read and accept the privacy policy"
                                                     v-model="readed"></v-checkbox>
 
                                     </v-container>
@@ -79,7 +79,7 @@
 
                                 <v-card-actions>
                                     <v-spacer></v-spacer>
-                                    <v-btn :disabled="!readed" color="primary" type="submit">Regisztráció</v-btn>
+                                    <v-btn :disabled="!readed" color="primary" type="submit">Registration</v-btn>
                                 </v-card-actions>
                             </form>
                         </v-container>

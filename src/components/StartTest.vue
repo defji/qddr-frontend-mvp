@@ -1,5 +1,4 @@
 <template>
-
     <v-container bg fill-height grid-list-md text-xs-center justify-center>
         <v-row justify="center" align="center">
             <v-col cols="12" sm="4" class="text-center">
@@ -10,12 +9,11 @@
                         type="info"
                         elevation="2"
                 >
-                    Helyezze a telefont a teszt eszközbe, majd nyomd <em>Teszt indítása</em> gombot.
+                    Assign your phone camera, and press <em>Start test</em> button.
                 </v-alert>
-
                 <v-btn x-large rounded color="accent">
                     <v-icon>camera_alt</v-icon>
-                    Teszt indítása
+                    Start test
                 </v-btn>
             </v-col>
         </v-row>

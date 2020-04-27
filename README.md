@@ -1,7 +1,7 @@
 # QDDR frontend MVP
 
 ## EUvsVirus 2020 | Health & Life | Cheap rapid tests  
-
+- [Video](https://www.youtube.com/watch?v=i-gm1dgPjrw&feature=youtu.be)
 - [Description](https://devpost.com/software/quick-digital-diagnostic-response-qddr)
 - [Live demo](http://qddr.dfj.hu) 
 
